@@ -14,22 +14,22 @@ body {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #888; 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: goldenrod; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: gold; 
   }
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .navbar {
@@ -42,8 +42,9 @@ header {
 }
 
 .logo img {
-    max-width: 100px;
+    width: 100px;
     height: auto;
+    max-height: 50px;
 }
 
 .nav-links {
@@ -58,6 +59,8 @@ header {
 }
 
 .nav-links a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.2rem;
     text-decoration: none;
     color: #fff;
     transition: color 0.3s ease;
@@ -68,9 +71,11 @@ header {
 }
 
 .buttons button {
-    padding: 10px 20px;
+    padding: 10px 40px;
     margin-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -85,9 +90,9 @@ header {
 }
 
 .register {
+    border: 2px solid #888;
     background-color: #333;
     color: #fff;
-    border: 1px solid #fff;
 }
 
 .register:hover {
@@ -116,10 +121,10 @@ header {
 }
 
 .main-content {
-    width: 63.6%;
+    width: 64%;
     flex-grow: 1;
     padding: 10px;
-    margin-right: 2.8rem;
+    margin-right: 3.2rem;
     background-color: #333;
     background: rgba(255, 255, 255, 0.2); /* Adjust opacity as needed */
     backdrop-filter: blur(10px); /* Adjust the blur amount */
@@ -144,7 +149,8 @@ header {
     background-color: #333;
     color: #fff;
     position: fixed;
-    top: 4.65rem;
+    top: 4rem;
+    padding-top: 10px;
     left: 0;
     transition: left 0.3s ease;
     overflow-y: scroll;
@@ -156,7 +162,8 @@ header {
     background-color: #333;
     color: #fff;
     position: fixed;
-    top: 4.65rem;
+    top: 4rem;
+    padding-top: 10px;
     right: 0;
     transition: left 0.3s ease;
 }
@@ -171,7 +178,7 @@ header {
     padding: 8px;
     border: none;
     background-color: #444;
-    color: #fff;
+    color: goldenrod;
     outline: none;
 }
 
@@ -215,6 +222,13 @@ header {
 .sidebar-links object {
     width: 15px;
     height: 15px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.sidebar-links img {
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     margin-right: 0.5rem;
 }
