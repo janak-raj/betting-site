@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Font Awesome Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff5733; /* Change to your desired hover color */
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login {
+    background-color: #ff5733; /* Change to your desired button color */
+    color: #fff;
+}
+
+.login:hover {
+    background-color: #e6491d; /* Change to your desired hover color */
+}
+
+.register {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.register:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #888;
+}
+
+.left-sidebar,
+.right-sidebar {
+    width: 16%;
+    padding: 10px;
+    color: #fff;
+    background-color: #333;
+    box-sizing: border-box;
+}
+
+.main-content {
+    width: 63.6%;
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 2.8rem;
+    background-color: #333;
+    background: rgba(255, 255, 255, 0.2); /* Adjust opacity as needed */
+    backdrop-filter: blur(10px); /* Adjust the blur amount */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-sidebar,
+    .right-sidebar,
+    .main-content {
+        width: 100%;
+    }
+}
+
+.sidebar {
+    width: 230px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 4.65rem;
+    left: 0;
+    transition: left 0.3s ease;
+    overflow-y: scroll;
+}
+
+.right-sidebar .sidebar_2nd {
+    width: 230px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 4.65rem;
+    right: 0;
+    transition: left 0.3s ease;
+}
+
+.search-bar {
+    padding: 10px;
+    background-color: #444;
+}
+
+.search-bar input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-links li {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-links a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.sidebar-links a:hover {
+    color: #ff5733; /* Change to your desired hover color */
+}
+
+.sidebar-links i {
+    margin-right: 10px;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    max-height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+}
+
+.sidebar_2nd {
+    width: 300px;
+    padding: 20px;
+    /* Add sidebar background, border, or other styles here */
+}
+
+.banner img,
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #444;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add card-specific styles here */
+}
+
+.card-content {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.main_elements {
+    width: 100%;
+    height: auto;
+}
+
+.bet-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    margin-top: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bet-card div {
+    border: 1px solid #888;
+}
+
+.bet-card div:first-child {
+    width: 6%;
+}
+
+.bet-card div:nth-child(2) {
+    width: 22%;
+}
+
+.bet-card div:nth-child(3) {
+    width: 20%;
+}
+
+.bet-card div:nth-child(4) {
+    width: 20%;
+}
+
+.bet-card div:nth-child(5) {
+    width: 20%;
+}
+
+.bet-card div:last-child {
+    width: 10%;
+}
+
+.score {
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: yellow;
+}
+
+.bet-card:hover {
+    transform: scale(1.02);
+}
+
+.event {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.time {
+    font-size: 14px;
+    color: #777;
+}
+
+.bet-options {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+}
+
+.bet-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.odds {
+    font-size: 16px;
+}
+
+.bet-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
