@@ -9,11 +9,14 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-    display: none;
-    width: 10px;
+    width: 8px;
   }
 
   .sidebar::-webkit-scrollbar {
+    display: block;
+  }
+
+  .main-content::-webkit-scrollbar {
     display: block;
   }
   
@@ -25,6 +28,7 @@ body {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: goldenrod; 
+    border-radius: 10px;
   }
   
   /* Handle on hover */
@@ -130,12 +134,13 @@ header {
     box-sizing: border-box;
 }
 
+
 .main-content {
     width: 64%;
     flex-grow: 1;
     padding: 10px;
     margin-top: 3.5rem;
-    margin-right: 3.1rem;
+    margin-right: 2.5rem;
     background-color: #333;
     background: rgba(255, 255, 255, 0.2); /* Adjust opacity as needed */
     backdrop-filter: blur(10px); /* Adjust the blur amount */
@@ -155,7 +160,7 @@ header {
 }
 
 .sidebar {
-    width: 230px;
+    width: 225px;
     height: 100%;
     background-color: #333;
     color: #fff;
@@ -168,7 +173,7 @@ header {
 }
 
 .right-sidebar .sidebar_2nd {
-    width: 230px;
+    width: 225px;
     height: 100%;
     background-color: #333;
     color: #fff;
