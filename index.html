@@ -9,24 +9,26 @@
 </head>
 <body>
 
-    <header>
-        <!-- Header content (logo, navigation, etc.) -->
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assets/logo/logo_real.png" alt="Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#"><i class="fa fa-signal"></i> Live</a></li>
-                <li><a href="#">Lotto</a></li>
-                <li><a href="#">Chance</a></li>
-                <li><a href="#"><i class="fa fa-dice"></i> Casino</a></li>
-            </ul>
-            <div class="buttons">
-                <button class="login">Login</button>
-                <button class="register">Register</button>
-            </div>
-        </nav>
-    </header>
+    <div class="top">
+        <header>
+            <!-- Header content (logo, navigation, etc.) -->
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="assets/logo/logo_real.png" alt="Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#"><i class="fa fa-signal"></i> Live</a></li>
+                    <li><a href="#"><i class="fa fa-layer-group"></i> Lotto</a></li>
+                    <li><a href="#"><i class="fa fa-slack"></i> Chance</a></li>
+                    <li><a href="#"><i class="fa fa-dice"></i> Casino</a></li>
+                </ul>
+                <div class="buttons">
+                    <button class="login">Login</button>
+                    <button class="register">Register</button>
+                </div>
+            </nav>
+        </header>
+    </div>
 
     <div class="container">
         <aside class="left-sidebar">
@@ -246,57 +248,445 @@
         </aside>
         <main class="main-content">
             <!-- Main content area -->
-            <div class="slideshow-container">
-                <div class="slide fade">
-                    <img src="assets/imgs/banners/ban1.png" alt="Slide 1">
-                </div>
-                <div class="slide fade">
-                    <img src="assets/imgs/banners/ban2.png" alt="Slide 2">
-                </div>
-                <div class="slide fade">
-                    <img src="assets/imgs/banners/ban3.png" alt="Slide 3">
-                </div>
-                <div class="slide fade">
-                    <img src="assets/imgs/banners/ban4.png" alt="Slide 3">
-                </div>
-                <div class="slide fade">
-                    <img src="assets/imgs/banners/ban5.png" alt="Slide 3">
-                </div>
-            </div>
-
-            <div class="main_elements">
-                <div class="bet-card">
-                    <div>
-                        <span>12:00</span>
+            <div class="main_content_elements">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="assets/imgs/banners/ban1.png" alt="Slide 1">
                     </div>
-                    <div>
-                        <table>
-                            <tr>
-                                <td class="team">Team A</td>
-                                <td>0</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td class="team">Team B</td>
-                                <td>0</td>
-                                <td></td>
-                            </tr>
-                        </table>
+                    <div class="slide fade">
+                        <img src="assets/imgs/banners/ban2.png" alt="Slide 2">
                     </div>
-                    <div>
-                        <span>Team A</span>
-                        <span class="score">2.00</span>
+                    <div class="slide fade">
+                        <img src="assets/imgs/banners/ban3.png" alt="Slide 3">
                     </div>
-                    <div>
-                        <span>Draw</span>
-                        <span class="score">3.00</span>
+                    <div class="slide fade">
+                        <img src="assets/imgs/banners/ban4.png" alt="Slide 3">
                     </div>
-                    <div>
-                        <span>Team B</span>
-                        <span class="score">2.50</span>
+                    <div class="slide fade">
+                        <img src="assets/imgs/banners/ban5.png" alt="Slide 3">
                     </div>
-                    <div>
-                        <span>All Markets</span>
+                </div>
+    
+                <div class="main_elements">
+                    <div class="bet-card">
+                        <div>
+                            <span class="time">12:00</span>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="team">Team A</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="team">Team B</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team A</span>
+                            <span class="odds">2.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Draw</span>
+                            <span class="odds">3.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team B</span>
+                            <span class="odds">2.50</span>
+                        </div>
+                        <div>
+                            <span class="all_market">All Markets</span>
+                        </div>
+                    </div>
+    
+                    <div class="bet-card">
+                        <div>
+                            <span class="time">12:00</span>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="team">Team A</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="team">Team B</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team A</span>
+                            <span class="odds">2.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Draw</span>
+                            <span class="odds">3.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team B</span>
+                            <span class="odds">2.50</span>
+                        </div>
+                        <div>
+                            <span class="all_market">All Markets</span>
+                        </div>
+                    </div>
+    
+                    <div class="bet-card">
+                        <div>
+                            <span class="time">12:00</span>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="team">Team A</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="team">Team B</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team A</span>
+                            <span class="odds">2.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Draw</span>
+                            <span class="odds">3.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team B</span>
+                            <span class="odds">2.50</span>
+                        </div>
+                        <div>
+                            <span class="all_market">All Markets</span>
+                        </div>
+                    </div>
+    
+                    <div class="bet-card">
+                        <div>
+                            <span class="time">12:00</span>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="team">Team A</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="team">Team B</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team A</span>
+                            <span class="odds">2.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Draw</span>
+                            <span class="odds">3.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team B</span>
+                            <span class="odds">2.50</span>
+                        </div>
+                        <div>
+                            <span class="all_market">All Markets</span>
+                        </div>
+                    </div>
+    
+                    <div class="bet-card">
+                        <div>
+                            <span class="time">12:00</span>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="team">Team A</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="team">Team B</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team A</span>
+                            <span class="odds">2.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Draw</span>
+                            <span class="odds">3.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team B</span>
+                            <span class="odds">2.50</span>
+                        </div>
+                        <div>
+                            <span class="all_market">All Markets</span>
+                        </div>
+                    </div>
+    
+    
+                    <div class="bet-card">
+                        <div>
+                            <span class="time">12:00</span>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="team">Team A</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="team">Team B</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team A</span>
+                            <span class="odds">2.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Draw</span>
+                            <span class="odds">3.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team B</span>
+                            <span class="odds">2.50</span>
+                        </div>
+                        <div>
+                            <span class="all_market">All Markets</span>
+                        </div>
+                    </div>
+    
+                    <div class="bet-card">
+                        <div>
+                            <span class="time">12:00</span>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="team">Team A</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="team">Team B</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team A</span>
+                            <span class="odds">2.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Draw</span>
+                            <span class="odds">3.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team B</span>
+                            <span class="odds">2.50</span>
+                        </div>
+                        <div>
+                            <span class="all_market">All Markets</span>
+                        </div>
+                    </div>
+    
+                    <div class="bet-card">
+                        <div>
+                            <span class="time">12:00</span>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="team">Team A</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="team">Team B</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team A</span>
+                            <span class="odds">2.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Draw</span>
+                            <span class="odds">3.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team B</span>
+                            <span class="odds">2.50</span>
+                        </div>
+                        <div>
+                            <span class="all_market">All Markets</span>
+                        </div>
+                    </div>
+    
+                    <div class="bet-card">
+                        <div>
+                            <span class="time">12:00</span>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="team">Team A</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="team">Team B</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team A</span>
+                            <span class="odds">2.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Draw</span>
+                            <span class="odds">3.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team B</span>
+                            <span class="odds">2.50</span>
+                        </div>
+                        <div>
+                            <span class="all_market">All Markets</span>
+                        </div>
+                    </div>
+    
+                    <div class="bet-card">
+                        <div>
+                            <span class="time">12:00</span>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="team">Team A</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="team">Team B</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team A</span>
+                            <span class="odds">2.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Draw</span>
+                            <span class="odds">3.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team B</span>
+                            <span class="odds">2.50</span>
+                        </div>
+                        <div>
+                            <span class="all_market">All Markets</span>
+                        </div>
+                    </div>
+    
+                    <div class="bet-card">
+                        <div>
+                            <span class="time">12:00</span>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="team">Team A</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="team">Team B</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team A</span>
+                            <span class="odds">2.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Draw</span>
+                            <span class="odds">3.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team B</span>
+                            <span class="odds">2.50</span>
+                        </div>
+                        <div>
+                            <span class="all_market">All Markets</span>
+                        </div>
+                    </div>
+    
+                    <div class="bet-card">
+                        <div>
+                            <span class="time">12:00</span>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="team">Team A</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="team">Team B</td>
+                                    <td class="score">0</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team A</span>
+                            <span class="odds">2.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Draw</span>
+                            <span class="odds">3.00</span>
+                        </div>
+                        <div>
+                            <span class="bet_label">Team B</span>
+                            <span class="odds">2.50</span>
+                        </div>
+                        <div>
+                            <span class="all_market">All Markets</span>
+                        </div>
                     </div>
                 </div>
             </div>
